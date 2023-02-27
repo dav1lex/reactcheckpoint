@@ -21,7 +21,9 @@ function App() {
         setstudent((prevState) => ({
             ...prevState,
             inClass: !student.inClass,
-            classCount: prevState.classCount++
+            classCount: prevState.inClass ? prevState.classCount++:
+                prevState.classCount
+
         }))
 
     }
